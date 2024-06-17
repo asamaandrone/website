@@ -1,6 +1,3 @@
-"use client"
-
-import Spline from "@splinetool/react-spline";
 import { Button } from "./ui/button";
 import { FlipWords } from "./ui/flip-words";
 
@@ -23,9 +20,9 @@ function Hero() {
       </Button>
 
       </div>
-      <div className="absolute -z-10 top-0 left-0 w-full h-full">
+      {/* <div className="absolute -z-10 top-0 left-0 w-full h-full">
         <Spline scene="https://prod.spline.design/UDPHFljNu087mPTB/scene.splinecode" />
-      </div>
+      </div> */}
     </section>
   );
 }
