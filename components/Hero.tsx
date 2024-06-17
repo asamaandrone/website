@@ -1,4 +1,6 @@
-import Spline from "@splinetool/react-spline/next";
+"use client"
+
+import Spline from "@splinetool/react-spline";
 import { Button } from "./ui/button";
 import { FlipWords } from "./ui/flip-words";
 
