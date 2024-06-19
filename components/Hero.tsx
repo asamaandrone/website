@@ -17,7 +17,7 @@ function Hero() {
         surveillance & tracking
       </h3>
       <Button size={"sm"} variant={"default"} className="w-fit">
-        Join the newsletter
+        Join our newsletter
       </Button>
 
       </div>
