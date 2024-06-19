@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { MotionConfig, delay, motion, stagger } from "framer-motion";
+import { MotionConfig, motion } from "framer-motion";
 
-export const AnimatedHamburgerButton = () => {
+function AnimatedHamburgerButton() {
   const [active, setActive] = useState(false);
   return (
     <MotionConfig
@@ -35,7 +35,7 @@ export const AnimatedHamburgerButton = () => {
       <motion.div
         animate={active ? "open" : "closed"}
         variants={VARIANTS.overlay}
-        className="absolute top-0 left-0 h-screen w-screen bg-accent flex flex-col justify-center items-center opacity-0"
+        className="absolute top-0 left-0 h-full w-screen bg-accent flex flex-col justify-center items-center opacity-0"
       >
         <motion.a variants={VARIANTS.link} className="opacity-0" href="#">
           <h1>BULIMA LR-1</h1>
@@ -115,3 +115,5 @@ const VARIANTS = {
     },
   },
 };
+
+export default AnimatedHamburgerButton;

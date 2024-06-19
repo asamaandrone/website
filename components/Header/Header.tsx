@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'; 
-import { AnimatedHamburgerButton } from './hamburger-button';
+import AnimatedHamburgerButton from './hamburger-button';
 
 function Header() {
     const [scrolling, setScrolling] = useState(false);
