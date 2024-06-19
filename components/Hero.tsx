@@ -10,14 +10,14 @@ function Hero() {
       <h1>
         Fly <FlipWords words={words} />
       </h1>
-      <h3>
+      <h2 className="text-2xl md:text-3xl">
         Building the most <span className="font-semibold text-accent">affordable</span> and{" "}
         <span className="font-semibold text-accent">perfomant</span>{" "}
         VTOL drones for aerial mapping,
         surveillance & tracking
-      </h3>
+      </h2>
       <Button size={"sm"} variant={"default"} className="w-fit">
-        Join the newsletter
+        Join our newsletter
       </Button>
 
       </div>
