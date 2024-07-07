@@ -12,13 +12,13 @@ const persons = [
     name: "Abdoulaye DIALLO",
     role: "CEO & Founder",
     imageUrl: "/team/abdoulaye_diallo.png",
-    linkeinUrl: "https://ca.linkedin.com/in/sohail-farooq-mqf-msc-mba-05b4403",
+    linkeinUrl: "https://www.linkedin.com/in/laye-diallo/",
   },
   {
     name: "Jonathan ALLARASSEM",
     role: "Head of R&D & Co-Founder",
     imageUrl: "/team/Jonathan.jpg",
-    linkeinUrl: "https://ca.linkedin.com/in/andrew-mcgregor-2a353a1",
+    linkeinUrl: "https://www.linkedin.com/in/jonathan-allarassem-0aab09200/",
   },
   {
     name: "Saliou DIOUF",
@@ -30,19 +30,25 @@ const persons = [
     name: "Aliou WADE",
     role: "Senior Software Engineer & Architect",
     imageUrl: "/team/Aliou.png",
-    linkeinUrl: "https://ca.linkedin.com/in/aliou-wade-35a435196",
+    linkeinUrl: "https://www.linkedin.com/in/aliou-wade-35a435196/",
   },
   {
     name: "Babacar SOW",
     role: "Hardware Team Lead",
     imageUrl: "/team/Babacar_Sow.jpg",
-    linkeinUrl: "https://ca.linkedin.com/in/paolasaad",
+    linkeinUrl: "https://www.linkedin.com/in/babacar-sassy-ngom-sow-910489204/",
   },
   {
     name: "Mouhamad GUEYE",
     role: "Software Engineer",
     imageUrl: "/team/mouhamad_gueye.jpg",
-    linkeinUrl: "https://ca.linkedin.com/in/andrew-mcgregor-2a353a1",
+    linkeinUrl: "https://www.linkedin.com/in/mouhamad-gueye-b00b31229/",
+  },
+  {
+    name: "Saly DIABY",
+    role: "Head Of Legal And Communication",
+    imageUrl: "/team/saly_diaby.jpeg",
+    linkeinUrl: "https://www.linkedin.com/in/saly-diaby-38b249200/",
   },
 ];
 
