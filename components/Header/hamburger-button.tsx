@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { MotionConfig, motion } from "framer-motion";
+interface AnimatedHamburgerButtonProps {
+  active: boolean;
+  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-function AnimatedHamburgerButton() {
-  const [active, setActive] = useState(false);
+const AnimatedHamburgerButton: React.FC<AnimatedHamburgerButtonProps> = ({ active, setActive }) => {
   return (
     <MotionConfig
       transition={{
@@ -35,19 +38,19 @@ function AnimatedHamburgerButton() {
       <motion.div
         animate={active ? "open" : "closed"}
         variants={VARIANTS.overlay}
-        className="absolute top-0 left-0 h-full w-screen bg-accent flex flex-col justify-center items-center opacity-0"
+        className="fixed z-0 top-0 right-0 h-screen w-screen bg-accent/10 backdrop-blur-xl flex flex-col justify-center items-end pr-36 gap-y-4 opacity-0 hover:[&_a]:text-accent"
       >
-        <motion.a variants={VARIANTS.link} className="opacity-0" href="#">
-          <h1>BULIMA LR-1</h1>
+        <motion.a variants={VARIANTS.link} className="opacity-0" href="#bulima">
+          <h2>BULIMA LR-1</h2>
         </motion.a>
-        <motion.a variants={VARIANTS.link} className="opacity-0"href="#">
-          <h1>APPLICATIONS</h1>
+        <motion.a variants={VARIANTS.link} className="opacity-0"href="#applications">
+          <h2>APPLICATIONS</h2>
         </motion.a>
-        <motion.a variants={VARIANTS.link} className="opacity-0"href="#">
-          <h1>ABOUT US</h1>
+        <motion.a variants={VARIANTS.link} className="opacity-0"href="#aboutus">
+          <h2>ABOUT US</h2>
         </motion.a>
-        <motion.a variants={VARIANTS.link} className="opacity-0"href="#">
-          <h1>CONTACT US</h1>
+        <motion.a variants={VARIANTS.link} className="opacity-0"href="#contactus">
+          <h2>CONTACT US</h2>
         </motion.a>
       </motion.div>
     </MotionConfig>
@@ -92,7 +95,6 @@ const VARIANTS = {
     open: {
       opacity: 1,
       height: ["0vh", "100vh"],
-      left: ["8%", "0%"],
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.1

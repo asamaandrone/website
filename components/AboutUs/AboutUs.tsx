@@ -6,11 +6,11 @@ import { TextGenerateEffect } from '../ui/text-generate-effect'
 
 function AboutUs() {
   return (
-    <section className='min-h-screen pt-8 my-4 space-y-4'>
+    <section id="aboutus" className='min-h-screen pt-8 my-4 space-y-4'>
       <h2 className='pb-4'><TextGenerateEffect words={"About us"} /></h2>
-      <h3>Meet the team</h3>
+      <p className="text-sm leading-6 pb-4">We are a young team composed of ambitious individiuals with experience in multiple fields. <br /> Our story is just starting!</p>
       <Team />
-      <h3 className='pt-4'>Our history</h3>
+      <h3 className='pt-4 uppercase'>Timeline</h3>
       <Timeline />
     </section >
   )

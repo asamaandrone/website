@@ -3,23 +3,21 @@ import { Button } from "./ui/button";
 import { FlipWords } from "./ui/flip-words";
 
 function Hero() {
-  const words = ["high", "long", "smart!"];
+  const words = ["high", "long", "smart"];
   return (
-    <section className="relative h-[50vh] md:h-[90vh] w-full">
-      <div className="flex flex-col justify-center space-y-8 text-balance max-w-[90%] md:max-w-[85%] xl:max-w-[70%] py-16">
-      <h1>
-        Fly <FlipWords words={words} />
-      </h1>
-      <h2 className="text-2xl md:text-3xl">
-        Building the most <span className="font-semibold text-accent">affordable</span> and{" "}
-        <span className="font-semibold text-accent">perfomant</span>{" "}
-        VTOL drones for aerial mapping,
-        surveillance & tracking
-      </h2>
-      <Button size={"sm"} variant={"default"} className="w-fit">
-        Join our newsletter
-      </Button>
-
+    <section className="relative h-[70vh] md:h-[90vh] w-full py-36">
+      <div className="flex flex-col justify-center items-center space-y-12 text-center ">
+        <h1 className="font-black">
+          Fly <FlipWords words={words} />
+        </h1>
+        <h2 className="text-xl md:text-2xl">
+          Building the most affordable and perfomant VTOL drones for aerial
+          mapping, surveillance & delivery
+        </h2>
+        <div className="space-x-4 font-black">
+          <Button size={"sm"}>Invest in Asamaan</Button>
+          <Button variant={"outline"} size={"sm"}>Stay updated!</Button>
+        </div>
       </div>
       <div className="max-md:hidden absolute -z-10 top-0 left-0 w-full h-full">
         <Spline scene="https://prod.spline.design/UDPHFljNu087mPTB/scene.splinecode" />
