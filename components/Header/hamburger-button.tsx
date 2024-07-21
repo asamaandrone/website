@@ -38,19 +38,19 @@ const AnimatedHamburgerButton: React.FC<AnimatedHamburgerButtonProps> = ({ activ
       <motion.div
         animate={active ? "open" : "closed"}
         variants={VARIANTS.overlay}
-        className="fixed z-0 top-0 right-0 h-screen w-screen bg-accent/10 backdrop-blur-xl flex flex-col justify-center items-end pr-36 gap-y-4 opacity-0 hover:[&_a]:text-accent"
+        className="fixed z-0 top-0 right-0 h-screen w-screen bg-accent/10 backdrop-blur-xl flex flex-col justify-center items-end pr-16 md:pr-36 gap-y-4 opacity-0 hover:[&_a]:text-accent"
       >
         <motion.a variants={VARIANTS.link} className="opacity-0" href="#bulima">
-          <h2>BULIMA LR-1</h2>
+          <h2 className="max-md:text-xl">BULIMA LR-1</h2>
         </motion.a>
         <motion.a variants={VARIANTS.link} className="opacity-0"href="#applications">
-          <h2>APPLICATIONS</h2>
+          <h2 className="max-md:text-xl">APPLICATIONS</h2>
         </motion.a>
         <motion.a variants={VARIANTS.link} className="opacity-0"href="#aboutus">
-          <h2>ABOUT US</h2>
+          <h2 className="max-md:text-xl">ABOUT US</h2>
         </motion.a>
         <motion.a variants={VARIANTS.link} className="opacity-0"href="#contactus">
-          <h2>CONTACT US</h2>
+          <h2 className="max-md:text-xl">CONTACT US</h2>
         </motion.a>
       </motion.div>
     </MotionConfig>
