@@ -26,15 +26,15 @@ const specs: Spec[] = [
 
 const features = [
   {
-    name: "AI-enabled Systems",
+    name: "Computer Vision",
     description:
-      "Harness the power of advanced artificial intelligence for real-time decision-making, object recognition, and autonomous flight planning, ensuring mission success even in complex environments.",
+      "With state-of-the-art object-detection algorithms, the drone autonomy is capable of detecting and localizing potential targets of interest.",
     image: "/features/ai.gif",
   },
   {
-    name: "Autonomous Navigation",
+    name: "High-definition 3D Maps",
     description:
-      "Featuring cutting-edge GPS and GNSS technology, the drone navigates autonomously with precision, avoiding obstacles and following predefined flight paths to complete missions efficiently and safely.",
+      "By leveraging the use of LiDAR and cameras, our software provides with high-fidelity 3D reconstructed environments after scanning.",
     image: "/features/autnav.gif",
   },
   {
@@ -44,9 +44,9 @@ const features = [
     image: "/features/radio.gif",
   },
   {
-    name: "Advanced Electronics",
+    name: "Autonomous Navigation",
     description:
-      "Equipped with high-resolution cameras, thermal imaging, LiDAR, and multispectral sensors, our drone captures detailed and accurate data for diverse applications.",
+      "Go anywhere and anytime you want with the Bulima LR-1. All she needs is a starting point A and your desired destination B.",
     image: "/features/electronics.jpeg",
   },
   {
