@@ -45,7 +45,7 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn(className)}>
-        <div className="text-accent tracking-wide">
+        <div className="tracking-wide uppercase">
           {renderWords()}
         </div>
     </div>

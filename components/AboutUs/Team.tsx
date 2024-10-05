@@ -80,27 +80,28 @@ export function Team() {
   }, [activeItem]);
 
   return (
-    <div className="h-full w-full overflow-scroll flex items-center justify-start my-8">
+    <div className="h-full w-full flex items-center justify-start my-8">
       <div className="w-full">
         <ul
           ref={wrapperRef}
-          className="group flex flex-col gap-3 md:h-[500px] md:flex-row md:justify-between w-screen"
+          className="group w-full flex flex-col gap-3 md:h-[1200px] md:grid md:grid-cols-3 md:place-items-center md:[&>*:last-child]:place-content-center"
         >
           {persons.map((person, index) => (
             <li
               onClick={() => setActiveItem(index)}
               aria-current={activeItem === index}
               className={classNames(
-                "relative md:hover:[&[aria-current='false']]:cursor-zoom-in md:w-[18%] md:[&[aria-current='true']]:w-[500px]",
+                "relative md:hover:[&[aria-current='false']]:cursor-zoom-in md:w-[95%] md:h-[90%] md:[&[aria-current='true']]:w-[100%] md:[&[aria-current='true']]:h-[100%]",
                 "md:[transition:width_var(--transition,200ms_ease-in)]",
+                "md:[transition:height_var(--transition,200ms_ease-in)]",
                 "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-background",
-                "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] md:hover:w-[22%]"
+                "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%]"
               )}
               key={person.name}
             >
               <div className="relative h-full w-full overflow-hidden rounded-lg border md:border-none">
                 <Image
-                  className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[500px] md:w-full md:-translate-x-1/2"
+                  className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:w-full md:h-full md:-translate-x-1/2"
                   src={person.imageUrl}
                   alt={person.name}
                   width={300}
@@ -122,7 +123,7 @@ export function Team() {
                   )}
                 >
                   <div className="w-full flex items-center justify-between">
-                    <p className="text-sm uppercase w-[200px] md:text-background dark:text-foreground xl:text-lg">
+                    <p className="text-xs uppercase w-[200px] md:text-background dark:text-foreground xl:text-sm">
                       {person.role}
                     </p>
                     <Link href={person.linkeinUrl} target="_blank">
@@ -135,12 +136,11 @@ export function Team() {
                   <p className="text-lg font-black md:w-[200px] text-wrap md:text-background dark:text-foreground xl:text-2xl">
                     {person.name}
                   </p>
-
                 </div>
                 <div className="w-full p-2">
-                    <p className="text-sm uppercase w-[200px] md:text-background dark:text-foreground md:text-lg">
-                      {person.role}
-                    </p>
+                  <p className="text-xs uppercase w-[200px] md:text-background dark:text-foreground md:text-lg">
+                    {person.role}
+                  </p>
 
                   <p className="text-lg font-black md:w-[200px] text-wrap md:text-background dark:text-foreground md:text-2xl">
                     {person.name}

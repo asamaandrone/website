@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Lato, Chakra_Petch } from "next/font/google";
+import { Instrument_Sans, Michroma, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 
-const font = Chakra_Petch({
+const font = Michroma({
   subsets: ["latin"],
   weight: "400"
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={font.className + bodyStyles}>{children}</body>
     </html>
   );
